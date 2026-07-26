@@ -17,8 +17,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
 });
 
 function createGallery(images) {
-  console.log(images);
-
   const markup = images
     .map(
       img =>
