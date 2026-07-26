@@ -55,6 +55,10 @@ function createGallery(images) {
   lightbox.refresh();
 }
 
+function clearGallery() {
+  galleryList.innerHTML = '';
+}
+
 function showLoader() {
   loader.classList.add('loader');
 }
@@ -63,4 +67,4 @@ function hideLoader() {
   loader.classList.remove('loader');
 }
 
-export { createGallery, showLoader, hideLoader };
+export { createGallery, clearGallery, showLoader, hideLoader };

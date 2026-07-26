@@ -1,9 +1,15 @@
 import { getImagesByQuery } from './js/pixabay-api';
-import { createGallery, showLoader, hideLoader } from './js/render-functions';
+import {
+  createGallery,
+  clearGallery,
+  showLoader,
+  hideLoader,
+} from './js/render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 async function loadImages(query) {
+  clearGallery();
   showLoader();
 
   try {
@@ -19,7 +25,11 @@ async function loadImages(query) {
     }
     createGallery(data.hits);
   } catch (error) {
-    console.error(error);
+    iziToast.error({
+      message: 'Something went wrong',
+      theme: 'light',
+      position: 'topRight',
+    });
   } finally {
     hideLoader();
   }
