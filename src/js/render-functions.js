@@ -1,5 +1,9 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import likeIcon from '../img/ic-like.svg';
+import viewsIcon from '../img/ic-views.svg';
+import commentIcon from '../img/ic-comment.svg';
+import downloadIcon from '../img/ic-download.svg';
 
 const loader = document.querySelector('#loader');
 const galleryList = document.querySelector('.gallery');
@@ -27,19 +31,19 @@ function createGallery(images) {
           />
           <div class='metrics'>
             <div class='metric'>
-              <img src="../img/ic-like.svg" alt="Like icon" width="18" height="18">
+              <img src="${likeIcon}" alt="Like icon" width="18" height="18">
               <p>${img.likes}</p>
             </div>
             <div class='metric'>
-              <img src="../img/ic-views.svg" alt="Views icon" width="20" height="20">
+              <img src="${viewsIcon}" alt="Views icon" width="20" height="20">
               <p>${img.views}</p>
             </div>
             <div class='metric'>
-              <img src="../img/ic-comment.svg" alt="Comments icon" width="20" height="20">
+              <img src="${commentIcon}" alt="Comments icon" width="20" height="20">
               <p>${img.comments}</p>
             </div>
             <div class='metric'>
-              <img src="../img/ic-download.svg" alt="Downloads icon" width="20" height="20">
+              <img src="${downloadIcon}" alt="Downloads icon" width="20" height="20">
               <p>${img.downloads}</p>
             </div>
           </div>
