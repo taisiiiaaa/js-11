@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/js-11",
+    "build": "vite build --base=/js-11/",
     "preview": "vite preview"
   },
   "devDependencies": {
