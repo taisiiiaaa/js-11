@@ -5,7 +5,7 @@ import viewsIcon from '../img/ic-views.svg';
 import commentIcon from '../img/ic-comment.svg';
 import downloadIcon from '../img/ic-download.svg';
 
-const loader = document.querySelector('#loader');
+const loader = document.querySelector('span');
 const galleryList = document.querySelector('.gallery');
 
 const lightbox = new SimpleLightbox('.gallery a', {
